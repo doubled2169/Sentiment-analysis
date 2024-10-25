@@ -1,0 +1,22 @@
+sentiment_analysis_app/
+│
+├── data/
+│   └── amazon_reviews.csv       # Dataset (can be replaced with any dataset)
+│
+├── models/
+│   ├── sentiment_model.pkl      # Trained machine learning model (Logistic Regression)
+│   └── tfidf_vectorizer.pkl     # TF-IDF vectorizer used during training
+│
+├── app/
+│   ├── __init__.py              # Initializes the Flask app
+│   ├── routes.py                # Contains the routes and view functions for the web app
+│   ├── static/                  # Static files like CSS, images
+│   │   └── styles.css           # Styling for the app
+│   └── templates/               # HTML templates for the app
+│       └── index.html           # Main web page for user input
+│
+├── train_model.py               # Python script for training the model
+├── app.py                       # Entry point for the Flask web application
+├── requirements.txt             # Python package dependencies
+├── Procfile                     # For deployment (specifies the command to run the app on Heroku)
+└── README.md                    # Project description and instructions
